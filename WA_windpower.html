@@ -26,10 +26,15 @@
 	
 	var map = L.mapbox.map('map', 'mapbox.light') 
         .setView([47.3344479, -120.4757828], 7);
-		//attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>';
+	
+	map.attributionControl
+		.addAttribution('<a href="http://www.leafletjs.com">Leaflet</a>');
 		
-		
-		
+	map.attributionControl
+		.addAttribution('<a href="https://en.wikipedia.org/wiki/List_of_power_stations_in_Washington">Metadata</a>');
+	
+	map.attributionControl
+		.addAttribution('<a href="https://www.linkedin.com/in/timliu1">Creator</a>');
 var windPower = [{  
   "type":"FeatureCollection",
   "features":[  
